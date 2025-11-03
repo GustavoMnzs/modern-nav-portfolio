@@ -41,7 +41,12 @@ const Services = () => {
                 className="group relative overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-500 animate-fade-in-up"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <CardContent className="p-8 space-y-6">
+                {/* Hover glow effect - positioned at card level to cover everything */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+                </div>
+                
+                <CardContent className="p-8 space-y-6 relative z-10">
                   <div className="relative">
                     <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                       <service.icon className="w-8 h-8 text-primary" />
@@ -55,11 +60,6 @@ const Services = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
-
-                  {/* Hover glow effect */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-                  </div>
                 </CardContent>
               </Card>
             ))}

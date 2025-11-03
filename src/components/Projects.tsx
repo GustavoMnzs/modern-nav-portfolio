@@ -56,7 +56,12 @@ const Projects = () => {
                 className="group relative overflow-hidden border-border/50 bg-card/80 backdrop-blur-sm hover:border-primary/50 transition-all duration-500 animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="p-0">
+                {/* Background glow overlay - at card level */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-0">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/3 to-transparent" />
+                </div>
+
+                <CardContent className="p-0 relative z-10">
                   <div className="relative aspect-video overflow-hidden">
                     <img
                       src={project.image}
