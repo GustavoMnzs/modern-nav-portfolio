@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection("hero")}>
-            <img src={logo} alt="GM Logo" className="h-12 w-12" />
+            <img src={logo} alt="Gustavo Menezes Logo" className="h-16 w-auto" />
           </div>
 
           <Button
