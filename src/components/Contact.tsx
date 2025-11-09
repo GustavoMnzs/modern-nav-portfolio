@@ -13,7 +13,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in-up">
               <div className="flex items-start gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors duration-300">
@@ -104,7 +104,7 @@ const Contact = () => {
                 <span>WhatsApp</span>
               </a>
               <a 
-                href="https://www.linkedin.com/in/gustavo-menezes" 
+                href="https://www.linkedin.com/in/gustavo-menezes-dev/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors duration-300 flex items-center gap-2"
