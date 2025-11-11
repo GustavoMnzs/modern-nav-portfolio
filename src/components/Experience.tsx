@@ -56,7 +56,7 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <Card
                 key={exp.company}
-                className="group relative overflow-hidden border border-border/50 bg-card/50 backdrop-blur-xl hover:border-primary/40 hover:bg-card/70 transition-all duration-300 animate-fade-in-up hover:shadow-[0_8px_30px_hsl(189,100%,50%,0.12)]"
+                className="group relative overflow-hidden border-2 border-primary/20 bg-card/70 backdrop-blur-xl hover:border-primary/50 hover:bg-card/90 transition-all duration-300 animate-fade-in-up shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_hsl(180,100%,50%,0.2)]"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Subtle glow on hover */}
@@ -94,14 +94,11 @@ const Experience = () => {
                       </ul>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground/70 md:flex-col md:items-end md:text-right">
-                      <Calendar className="w-4 h-4 text-primary/70" />
-                      <span className="font-medium">{exp.period}</span>
-                      {exp.current && (
-                        <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold mt-2">
-                          Atual
-                        </span>
-                      )}
+                    <div className="flex items-center gap-2 md:flex-col md:items-end">
+                      <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold border border-primary/20 flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                        {exp.period}
+                      </span>
                     </div>
                   </div>
                 </CardContent>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +42,7 @@ const Navigation = () => {
           <Button
             variant="outline"
             onClick={() => scrollToSection("contact")}
-            className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 hover:scale-105 transition-all duration-500 rounded-xl px-6 backdrop-blur-sm"
+            className="border-primary/40 text-primary hover:bg-primary hover:text-background hover:border-primary transition-all duration-300 rounded-xl px-6 backdrop-blur-sm font-medium"
           >
             Contato
           </Button>

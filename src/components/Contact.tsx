@@ -71,7 +71,7 @@ const Contact = () => {
                   <Button
                     size="lg"
                     onClick={() => window.location.href = 'mailto:gustavomnzs1@gmail.com'}
-                    className="bg-primary/90 backdrop-blur-sm text-primary-foreground hover:bg-primary hover:scale-105 transition-all duration-500 text-base px-10 py-7 rounded-2xl shadow-lg hover:shadow-[0_0_30px_hsl(180,70%,55%,0.3)]"
+                    className="bg-primary text-background hover:bg-primary/95 hover:scale-105 transition-all duration-300 text-base px-10 py-7 rounded-2xl shadow-lg hover:shadow-[0_20px_50px_hsl(180,100%,50%,0.4)] font-semibold"
                   >
                     Falar com Gustavo
                   </Button>
@@ -85,8 +85,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="container mx-auto px-6 mt-32">
         <div className="max-w-6xl mx-auto pt-12 border-t border-border/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-sm text-muted-foreground/70">
-            <p className="font-light">© 2025 Gustavo Menezes. Todos os direitos reservados.</p>
+          <div className="flex flex-col justify-center items-center gap-6 text-sm text-muted-foreground/70 text-center">
             <div className="flex gap-8 items-center">
               <a 
                 href="https://wa.me/5561992662886" 
@@ -113,6 +112,7 @@ const Contact = () => {
                 <span className="font-light">LinkedIn</span>
               </a>
             </div>
+            <p className="font-light">© 2025 Gustavo Menezes. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

@@ -53,7 +53,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={project.name}
-                className="group relative overflow-hidden border border-border/50 bg-card/50 backdrop-blur-xl hover:border-primary/40 hover:bg-card/70 transition-all duration-300 animate-fade-in-up hover:shadow-[0_8px_30px_hsl(189,100%,50%,0.12)]"
+                className="group relative overflow-hidden border-2 border-primary/20 bg-card/70 backdrop-blur-xl hover:border-primary/50 hover:bg-card/90 transition-all duration-300 animate-fade-in-up shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_hsl(180,100%,50%,0.2)]"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Subtle glow on hover */}
@@ -75,7 +75,7 @@ const Projects = () => {
                       <Button
                         size="lg"
                         onClick={() => window.open(project.url, "_blank")}
-                        className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_20px_50px_hsl(189,100%,50%,0.3)] transition-all duration-300 font-medium"
+                        className="bg-primary text-background hover:bg-primary/95 hover:shadow-[0_20px_50px_hsl(180,100%,50%,0.4)] transition-all duration-300 font-semibold"
                       >
                         <ExternalLink className="w-5 h-5 mr-2" />
                         Ver Projeto

@@ -36,7 +36,7 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-32 relative scroll-fade-section bg-secondary/20">
+    <section id="skills" className="py-32 relative scroll-fade-section">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
@@ -55,7 +55,7 @@ const Skills = () => {
             {skillCategories.map((category, index) => (
               <Card
                 key={category.title}
-                className="group relative overflow-hidden border border-border/50 bg-card/50 backdrop-blur-xl hover:border-primary/40 hover:bg-card/70 transition-all duration-300 animate-fade-in-up hover:shadow-[0_8px_30px_hsl(189,100%,50%,0.12)]"
+                className="group relative overflow-hidden border-2 border-primary/20 bg-card/70 backdrop-blur-xl hover:border-primary/50 hover:bg-card/90 transition-all duration-300 animate-fade-in-up shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_hsl(180,100%,50%,0.2)]"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Subtle glow on hover */}

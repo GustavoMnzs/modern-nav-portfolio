@@ -24,14 +24,14 @@ const BackgroundGlow = () => {
         <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] animate-pulse" style={{ animationDuration: '12s', animationDelay: '4s' }} />
       </div>
 
-      {/* Subtle cursor glow - more refined */}
+      {/* Subtle cursor glow */}
       <div
         className="absolute w-[400px] h-[400px] rounded-full opacity-[0.08] blur-[80px] transition-all duration-500 ease-out"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
           transform: 'translate(-50%, -50%)',
-          background: 'radial-gradient(circle, hsl(189, 100%, 50%) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, hsl(180, 100%, 50%) 0%, transparent 70%)',
         }}
       />
 
