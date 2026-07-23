@@ -6,9 +6,9 @@ import logo from "@/assets/logo.svg";
 
 const navLinks = [
   { label: "Sobre", id: "about" },
-  { label: "Projetos", id: "projects" },
-  { label: "Serviços", id: "services" },
-  { label: "Skills", id: "skills" },
+  { label: "Cases", id: "projects" },
+  { label: "Especialidades", id: "services" },
+  { label: "Stack", id: "skills" },
   { label: "Experiência", id: "experience" },
 ];
 

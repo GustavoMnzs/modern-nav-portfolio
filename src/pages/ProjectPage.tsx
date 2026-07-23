@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, CircleCheckBig, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { allProjects } from "@/data/projects";
 import CustomCursor from "@/components/CustomCursor";
@@ -33,7 +33,10 @@ const ProjectPage = () => {
   const fadeUp = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1] as [number, number, number, number],
+    },
   };
 
   const stagger = {
@@ -106,7 +109,7 @@ const ProjectPage = () => {
                 )}
               </motion.div>
 
-              {/* Preview */}
+              {/* External project preview */}
               {project.hasPreview && project.url !== "#" && (
                 <motion.div
                   className="mb-16 rounded-2xl overflow-hidden border border-white/[0.06] bg-white/[0.02]"
@@ -115,38 +118,32 @@ const ProjectPage = () => {
                   transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <div className="flex items-center gap-2 px-4 py-3 border-b border-white/[0.06] bg-white/[0.02]">
-                    <div className="flex gap-1.5">
+                    <div className="flex gap-1.5" aria-hidden="true">
                       <div className="w-3 h-3 rounded-full bg-white/10" />
                       <div className="w-3 h-3 rounded-full bg-white/10" />
                       <div className="w-3 h-3 rounded-full bg-white/10" />
                     </div>
-                    <div className="flex-1 flex justify-center">
+                    <div className="flex-1 flex justify-center min-w-0">
                       <span className="text-xs text-muted-foreground mono truncate">{project.url}</span>
                     </div>
                   </div>
-                  {/* Desktop: original aspect-video iframe */}
-                  <div className="hidden md:block aspect-video bg-background">
-                    <iframe
-                      src={project.url}
-                      title={`Preview de ${project.name}`}
-                      className="w-full h-full border-0"
-                      loading="lazy"
-                      sandbox="allow-scripts allow-same-origin"
-                    />
-                  </div>
-                  {/* Mobile: link card instead of iframe */}
-                  <div
-                    className="md:hidden flex items-center justify-center py-12 cursor-pointer group"
-                    onClick={() => window.open(project.url, "_blank")}
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group aspect-video flex items-center justify-center bg-background/60 hover:bg-white/[0.02] transition-colors"
+                    aria-label={`Abrir ${project.name} em uma nova aba`}
                   >
-                    <div className="text-center space-y-3">
-                      <div className="w-12 h-12 mx-auto rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-all duration-300">
-                        <ExternalLink className="w-6 h-6 text-primary" />
+                    <div className="text-center space-y-3 px-6">
+                      <div className="w-14 h-14 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 group-hover:scale-105 transition-all duration-300">
+                        <ExternalLink className="w-7 h-7 text-primary" />
                       </div>
-                      <p className="text-sm text-muted-foreground">Toque para abrir o site</p>
-                      <p className="text-xs text-primary mono">{project.url}</p>
+                      <p className="text-sm text-foreground group-hover:text-primary transition-colors">
+                        Abrir projeto em uma nova aba
+                      </p>
+                      <p className="text-xs text-muted-foreground mono break-all">{project.url}</p>
                     </div>
-                  </div>
+                  </a>
                 </motion.div>
               )}
 
@@ -189,6 +186,19 @@ const ProjectPage = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <CircleCheckBig className="w-5 h-5 text-primary" aria-hidden="true" />
+                    <h2 className="text-sm text-primary font-semibold mono tracking-wider uppercase">Resultado</h2>
+                  </div>
+                  <p className="text-foreground/90 leading-relaxed">{project.result}</p>
+                </motion.div>
+
+                <motion.div
+                  className="rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] p-8"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
                 >
                   <h2 className="text-sm text-primary font-semibold mono tracking-wider uppercase mb-4">Stack utilizada</h2>
                   <div className="flex flex-wrap gap-2">

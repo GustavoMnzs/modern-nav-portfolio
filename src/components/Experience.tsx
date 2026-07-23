@@ -3,52 +3,42 @@ import SpotlightCard from "./SpotlightCard";
 const experiences = [
   {
     company: "Olym",
-    role: "Fundador e CTO",
-    period: "Atual",
+    role: "Founder",
+    period: "jun/2025–atual",
     current: true,
     description: [
-      "Criação do produto do zero, da ideia à produção",
-      "Arquitetura full-stack com React, Node.js e IA",
-      "Definição de roadmap e estratégia de produto",
+      "Desenvolvimento de produto HealthTech da concepção à produção",
+      "Aplicação de LLMs e agentes de IA na evolução do produto",
+      "Implementação Full Stack com React e Node.js",
+      "Atuação hands-on da arquitetura à evolução contínua",
     ],
   },
   {
-    company: "Social IA, Sabido, AtlasBase, TicHub, VestGo",
-    role: "CTO",
-    period: "Atual",
-    current: true,
-    description: [
-      "Liderança técnica de múltiplos produtos simultaneamente",
-      "Definição de stack, arquitetura e padrões de desenvolvimento",
-      "Gestão de times e entrega contínua de features",
-    ],
-  },
-  {
-    company: "Gálata Tecnologia",
+    company: "Gálata",
     role: "Engenheiro Líder de Suporte",
-    period: "Abr 2025 / Atual",
+    period: "abr/2025–atual",
     current: true,
     description: [
-      "Gestão integral da operação de suporte técnico corporativo",
-      "Liderança técnica em migrações complexas de sistemas",
+      "Liderança da operação de suporte técnico corporativo",
+      "Atuação técnica em migrações complexas de sistemas",
       "Manutenção de infraestrutura crítica em ambientes web",
     ],
   },
   {
-    company: "Volpe Marketing Digital",
-    role: "Diretor de Tecnologia (CTO) e Co-Fundador",
-    period: "Jul 2024 / Jun 2025",
+    company: "Volpe",
+    role: "Desenvolvedor Full Stack & Especialista em Automação",
+    period: "jul/2024–jun/2025",
     current: false,
     description: [
-      "Liderança técnica e estratégica focada em produtos digitais e automação de marketing",
-      "Desenvolvimento e engenharia de toda a infraestrutura tecnológica de vendas",
-      "Faturamento superior a R$ 180.000 em apenas 6 meses",
+      "Desenvolvimento Full Stack de produtos digitais e automações de marketing",
+      "Construção e evolução da infraestrutura tecnológica de vendas",
+      "Infraestrutura que apoiou R$ 180 mil+ em faturamento",
     ],
   },
   {
     company: "UpSites",
     role: "Engenheiro de Sistemas Web",
-    period: "Mar 2022 / Fev 2024",
+    period: "mar/2022–fev/2024",
     current: false,
     description: [
       "Desenvolvimento e sustentação de sistemas web focados em conversão, segurança e alta performance",
@@ -106,6 +96,26 @@ const Experience = () => {
                 </div>
               </SpotlightCard>
             ))}
+          </div>
+
+          <div className="mt-10">
+            <SpotlightCard className="rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] animate-fade-in-up">
+              <div className="p-6">
+                <h3 className="text-base font-semibold text-foreground">Formação</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                  <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4">
+                    <p className="text-sm font-medium text-foreground">Análise e Desenvolvimento de Sistemas (ADS)</p>
+                    <p className="text-sm text-muted-foreground mt-1">Universidade Católica de Brasília</p>
+                    <p className="text-xs text-primary mono mt-3">Concluído em dez/2022</p>
+                  </div>
+                  <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] p-4">
+                    <p className="text-sm font-medium text-foreground">Desenvolvimento Web Completo</p>
+                    <p className="text-sm text-muted-foreground mt-1">Carga horária: 114,5h</p>
+                    <p className="text-xs text-primary mono mt-3">Concluído em dez/2022</p>
+                  </div>
+                </div>
+              </div>
+            </SpotlightCard>
           </div>
         </div>
       </div>

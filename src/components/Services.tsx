@@ -2,12 +2,36 @@ import { Cpu, Layers, Rocket, Bot, GitBranch, BarChart3 } from "lucide-react";
 import SpotlightCard from "./SpotlightCard";
 
 const services = [
-  { icon: Rocket, title: "Criação de Produtos", description: "Do conceito ao MVP. Arquiteto e construo produtos digitais completos, validados e prontos para escalar." },
-  { icon: Bot, title: "Soluções com IA", description: "Integro inteligência artificial para automatizar processos, resolver problemas complexos e gerar vantagem competitiva." },
-  { icon: Layers, title: "Arquitetura de Sistemas", description: "Design de sistemas robustos, escaláveis e bem estruturados. Do banco de dados à interface do usuário." },
-  { icon: GitBranch, title: "Liderança Técnica", description: "Atuo como CTO, liderando times de desenvolvimento, definindo stack e garantindo qualidade de entrega." },
-  { icon: Cpu, title: "Automação de Processos", description: "Transformo processos manuais em fluxos automatizados. Reduzi assinatura de contratos de 10 dias para 1." },
-  { icon: BarChart3, title: "Refatoração e Redesign", description: "Modernizo sistemas legados com arquitetura limpa, melhor UX e performance otimizada." },
+  {
+    icon: Cpu,
+    title: "IA generativa e LLMs",
+    description: "Desenvolvo soluções com LLMs, prompt engineering e fluxos generativos conectados ao produto.",
+  },
+  {
+    icon: Layers,
+    title: "RAG e inteligência documental",
+    description: "Estruturo busca semântica e respostas contextualizadas sobre documentos e bases de conhecimento.",
+  },
+  {
+    icon: Bot,
+    title: "Agentes de IA e automação",
+    description: "Crio agentes conectados a ferramentas para automatizar processos e operações.",
+  },
+  {
+    icon: Rocket,
+    title: "Produtos Full Stack com IA",
+    description: "Entrego aplicações que integram IA, backends escaláveis e interfaces modernas.",
+  },
+  {
+    icon: GitBranch,
+    title: "APIs e integrações",
+    description: "Construo APIs REST e integrações entre modelos, serviços, dados e sistemas de negócio.",
+  },
+  {
+    icon: BarChart3,
+    title: "Arquitetura e liderança técnica",
+    description: "Defino arquitetura, evolução técnica e roadmap com atuação hands-on até o deploy.",
+  },
 ];
 
 const Services = () => {
@@ -16,11 +40,15 @@ const Services = () => {
       <div className="section-container">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">Serviços</span>
+            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">
+              Especialidades
+            </span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
-              O que eu <span className="text-primary">construo</span>
+              Como transformo <span className="text-primary">IA em produto</span>
             </h2>
-            <p className="text-muted-foreground mt-3 max-w-lg mx-auto">Não faço só código. Crio soluções que transformam negócios.</p>
+            <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+              Do modelo ao deploy, unindo inteligência artificial, produto e engenharia.
+            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((s, i) => (

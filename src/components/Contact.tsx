@@ -11,19 +11,18 @@ const Contact = () => {
               Contato
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
-              Vamos{" "}
-              <span className="text-primary">conversar</span>
+              Vamos construir o próximo <span className="text-primary">produto com IA?</span>
             </h2>
             <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
-              Tem um projeto, produto ou desafio técnico? Me chama.
+              Estou disponível para oportunidades e desafios em IA, Full Stack e arquitetura de software.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 items-start">
-            <div className="space-y-3 animate-fade-in-up">
+          <div className="grid md:grid-cols-2 gap-6 items-stretch">
+            <div className="flex flex-col gap-3 h-full animate-fade-in-up">
               <a
                 href="mailto:gustavomnzs1@gmail.com"
-                className="flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
+                className="flex-1 flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-all duration-300">
                   <Mail className="w-5 h-5 text-primary" />
@@ -41,7 +40,7 @@ const Contact = () => {
                 href="https://wa.me/5561992662886"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
+                className="flex-1 flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-all duration-300">
                   <MessageCircle className="w-5 h-5 text-primary" />
@@ -57,7 +56,7 @@ const Contact = () => {
 
               <a
                 href="tel:+5561992662886"
-                className="flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
+                className="flex-1 flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] hover:bg-white/[0.06] hover:border-white/[0.1] transition-all duration-300 group"
               >
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-all duration-300">
                   <Phone className="w-5 h-5 text-primary" />
@@ -71,7 +70,7 @@ const Contact = () => {
                 <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               </a>
 
-              <div className="flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06]">
+              <div className="flex-1 flex items-center gap-4 p-5 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06]">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
@@ -82,8 +81,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="animate-fade-in-up" style={{ animationDelay: "150ms" }}>
-              <div className="relative rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] p-8 text-center space-y-6 overflow-hidden">
+            <div className="h-full animate-fade-in-up" style={{ animationDelay: "150ms" }}>
+              <div className="relative h-full flex flex-col justify-center rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/[0.06] p-8 text-center space-y-6 overflow-hidden">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/8 rounded-full blur-3xl" />
 
                 <div className="relative space-y-6">
@@ -91,18 +90,30 @@ const Contact = () => {
                     <Mail className="w-7 h-7 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground">Pronto para começar?</h3>
+                    <h3 className="text-lg font-semibold text-foreground">Aberto a novas oportunidades</h3>
                     <p className="text-muted-foreground text-sm mt-2">
-                      Vamos transformar sua ideia em produto.
+                      Vamos conversar sobre o próximo desafio em IA, Full Stack ou arquitetura.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3">
                     <Button
+                      asChild
                       size="lg"
-                      onClick={() => window.open("https://wa.me/5561992662886", "_blank")}
                       className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 rounded-xl font-semibold shadow-[0_0_20px_hsl(180,100%,50%,0.2)] hover:shadow-[0_0_40px_hsl(180,100%,50%,0.35)] w-full"
                     >
-                      Chamar no WhatsApp
+                      <a href="https://wa.me/5561992662886" target="_blank" rel="noopener noreferrer">
+                        Falar sobre uma oportunidade
+                      </a>
+                    </Button>
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="border-white/[0.06] bg-transparent text-foreground hover:bg-white/[0.04] hover:border-white/[0.12] hover:text-primary transition-all duration-300 rounded-xl font-semibold w-full"
+                    >
+                      <a href="/curriculo-gustavo-menezes.pdf" download>
+                        Baixar currículo
+                      </a>
                     </Button>
                     <Button
                       size="lg"

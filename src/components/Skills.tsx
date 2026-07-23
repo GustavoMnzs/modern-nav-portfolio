@@ -1,36 +1,41 @@
-import { Code2, Brain, Server, Palette, Terminal, Users } from "lucide-react";
+import { Code2, Brain, Server, Database, Terminal } from "lucide-react";
 import SpotlightCard from "./SpotlightCard";
 
 const skillCategories = [
   {
-    icon: Code2,
-    title: "Frontend",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Shadcn/UI"],
+    icon: Brain,
+    title: "Inteligência Artificial",
+    skills: [
+      "IA Generativa",
+      "LLMs",
+      "RAG",
+      "Agentes de IA",
+      "LangChain",
+      "OpenAI API",
+      "Prompt Engineering",
+      "NLP",
+      "Automação de Workflows",
+    ],
   },
   {
     icon: Server,
-    title: "Backend e Infra",
-    skills: ["Node.js", "Python", "PostgreSQL", "Supabase", "APIs REST"],
+    title: "Backend e Integrações",
+    skills: ["Python", "Node.js", "APIs REST", "Integrações de APIs", "Processamento Documental"],
   },
   {
-    icon: Brain,
-    title: "Inteligência Artificial",
-    skills: ["LLMs", "Prompt Engineering", "Automação com IA", "Agentes"],
+    icon: Code2,
+    title: "Frontend",
+    skills: ["TypeScript", "JavaScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
-    icon: Palette,
-    title: "Design e UX",
-    skills: ["Figma", "UI/UX", "Design Systems", "Prototipagem"],
+    icon: Database,
+    title: "Dados",
+    skills: ["PostgreSQL", "SQL", "Supabase"],
   },
   {
     icon: Terminal,
-    title: "DevOps e Tools",
-    skills: ["Git", "CI/CD", "Docker", "Vercel"],
-  },
-  {
-    icon: Users,
-    title: "Liderança",
-    skills: ["CTO", "Scrum", "Gestão de Times", "Produto", "Arquitetura"],
+    title: "Infraestrutura e Produto",
+    skills: ["Docker", "Linux", "Git", "Vercel", "CI/CD", "Arquitetura SaaS", "Roadmap", "Troubleshooting"],
   },
 ];
 
@@ -40,9 +45,9 @@ const Skills = () => {
       <div className="section-container">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">Competências</span>
+            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">Stack</span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
-              Stack e <span className="text-primary">Habilidades</span>
+              Especialidades <span className="text-primary">técnicas</span>
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

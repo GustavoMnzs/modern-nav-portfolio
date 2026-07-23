@@ -7,6 +7,7 @@ export interface ProjectData {
   description: string;
   challenge: string;
   solution: string;
+  result: string;
   stack: string[];
   tags: string[];
   hasPreview: boolean;
@@ -17,144 +18,159 @@ export const allProjects: ProjectData[] = [
     slug: "olym",
     name: "Olym",
     url: "https://olym.com.br/",
-    role: "Fundador e CTO",
-    tagline: "Meu produto. Da ideia ao deploy, tudo construído por mim.",
+    role: "Founder",
+    tagline: "HealthTech com IA aplicada a rotinas que importam.",
     description:
-      "A Olym é meu produto principal. Uma plataforma que nasceu de uma necessidade real que identifiquei no mercado. Fui responsável por toda a jornada: validação da ideia, definição do produto, arquitetura técnica, desenvolvimento e deploy em produção.",
+      "A Olym é uma HealthTech criada para conectar tecnologia e operação. Como Founder, conduzo o produto da concepção à produção, com foco no uso prático de IA em rotinas operacionais e tarefas administrativas.",
     challenge:
-      "Construir um produto completo do zero, sozinho no início, garantindo que a arquitetura fosse escalável desde o dia 1. Precisava de uma base sólida que suportasse crescimento sem reescritas.",
+      "Transformar rotinas operacionais e tarefas administrativas em fluxos mais simples, mantendo produto, dados e automações conectados em uma única experiência.",
     solution:
-      "Optei por uma stack moderna com React e TypeScript no frontend, Node.js no backend, PostgreSQL como banco e inteligência artificial integrada nos fluxos principais. Deploy automatizado na Vercel com CI/CD.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "IA", "Vercel"],
-    tags: ["Produto Próprio", "Full-Stack", "IA"],
-    hasPreview: true,
-  },
-  {
-    slug: "social-ia",
-    name: "Social IA",
-    url: "https://socialia.com.br/",
-    role: "CTO",
-    tagline: "Conteúdo que se cria sozinho. IA aplicada a redes sociais.",
-    description:
-      "Social IA é uma plataforma de automação e geração de conteúdo para redes sociais usando inteligência artificial. Como CTO, lidero toda a parte técnica do produto, desde a arquitetura até a integração com modelos de IA.",
-    challenge:
-      "Criar uma plataforma que gerasse conteúdo de qualidade de forma automatizada, mantendo a personalidade e tom de voz de cada marca. A integração com múltiplas redes sociais e APIs de IA era complexa.",
-    solution:
-      "Arquitetura baseada em agentes de IA com pipelines de geração de conteúdo. Integração com LLMs para criação de textos, imagens e estratégias de postagem. Stack moderna com foco em performance e escalabilidade.",
-    stack: ["React", "TypeScript", "Node.js", "IA", "LLMs", "APIs"],
-    tags: ["IA", "SaaS", "CTO"],
-    hasPreview: true,
-  },
-  {
-    slug: "sabido",
-    name: "Sabido",
-    url: "https://sabido.pro/",
-    role: "CTO",
-    tagline: "Aprendizado que se adapta ao aluno, não o contrário.",
-    description:
-      "O Sabido é uma plataforma de educação que usa IA para personalizar a experiência de aprendizado. Como CTO, sou responsável por toda a liderança técnica, definição de stack e arquitetura do sistema.",
-    challenge:
-      "Criar uma experiência de aprendizado personalizada que se adaptasse ao ritmo de cada aluno. O sistema precisava processar dados em tempo real e ajustar o conteúdo dinamicamente.",
-    solution:
-      "Implementei uma arquitetura que combina análise de dados do aluno com modelos de IA para recomendar conteúdo. O frontend é rápido e responsivo, o backend processa dados em tempo real.",
-    stack: ["React", "TypeScript", "Node.js", "Supabase", "IA"],
-    tags: ["EdTech", "CTO", "IA"],
+      "Construí uma arquitetura full stack com React, TypeScript, Node.js e PostgreSQL, integrando LLMs e fluxos de agentes para automatizar etapas recorrentes da operação.",
+    result:
+      "Rotinas operacionais e tarefas administrativas mais simples, com LLMs e agentes de IA assumindo etapas repetitivas dos fluxos.",
+    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "LLMs", "Agentes de IA"],
+    tags: ["HealthTech", "LLMs", "Agentes de IA"],
     hasPreview: true,
   },
   {
     slug: "atlasbase",
     name: "AtlasBase",
     url: "https://atlasbase.com.br/",
-    role: "CTO",
-    tagline: "Dados organizados, acessíveis e prontos para decisão.",
+    role: "Especialista em IA & Full Stack",
+    tagline: "Documentos não estruturados transformados em dados úteis.",
     description:
-      "AtlasBase é uma plataforma de infraestrutura de dados. Como CTO, defino a arquitetura do sistema, lidero o time de desenvolvimento e garanto que a plataforma seja robusta e escalável.",
+      "AtlasBase é uma plataforma B2B de IA documental que processa PDFs e outros documentos não estruturados, transformando informação em dados organizados para fluxos de auditoria e compliance.",
     challenge:
-      "Lidar com grandes volumes de dados de forma eficiente, garantindo integridade e velocidade de consulta. A arquitetura precisava ser flexível para diferentes tipos de dados.",
+      "Ler, organizar e estruturar manualmente informações espalhadas em documentos não estruturados tornava os fluxos de auditoria e compliance lentos e dependentes de trabalho repetitivo.",
     solution:
-      "Arquitetura baseada em PostgreSQL com camadas de cache e indexação otimizada. APIs REST bem estruturadas e frontend com visualizações de dados em tempo real.",
-    stack: ["React", "TypeScript", "PostgreSQL", "Node.js", "APIs REST"],
-    tags: ["Data", "CTO", "Arquitetura"],
+      "Desenvolvi uma solução full stack que combina NLP, processamento documental, APIs e persistência em PostgreSQL para extrair e estruturar as informações dos documentos.",
+    result:
+      "Automação da leitura, organização e estruturação de informações antes tratadas manualmente.",
+    stack: ["NLP", "Processamento Documental", "APIs", "Full Stack", "PostgreSQL"],
+    tags: ["IA documental", "B2B", "Compliance"],
     hasPreview: true,
+  },
+  {
+    slug: "condor-inova-ia",
+    name: "Condor Inova IA",
+    url: "#",
+    role: "Especialista em IA & Full Stack",
+    tagline: "Agentes de IA que colaboram para conduzir tarefas de ponta a ponta.",
+    description:
+      "Condor Inova IA é uma iniciativa de inovação da Condor baseada em um sistema multiagente. Com uma abordagem semelhante à do CrewAI, estruturei agentes de IA especializados que assumem papéis definidos e colaboram entre si para conduzir tarefas do início ao fim.",
+    challenge:
+      "Tarefas operacionais dependiam de várias etapas manuais e de decisões humanas em cada ponto do fluxo, o que tornava o processo lento e difícil de escalar.",
+    solution:
+      "Desenvolvi uma arquitetura de agentes orquestrados, com papéis, objetivos e ferramentas definidos para cada agente. Os agentes se comunicam, delegam subtarefas e usam LLMs para interpretar o contexto, decidir os próximos passos e encadear as etapas do fluxo.",
+    result:
+      "Fluxos conduzidos por agentes de IA que colaboram entre si, reduzindo a dependência de intervenção manual a cada etapa.",
+    stack: ["Python", "LLMs", "Agentes de IA", "Orquestração Multiagente", "APIs"],
+    tags: ["Agentes de IA", "Multiagente", "LLMs"],
+    hasPreview: false,
   },
   {
     slug: "tichub",
     name: "TicHub",
     url: "https://tichub.com.br/",
-    role: "CTO",
-    tagline: "Tecnologia conectada em um só lugar.",
+    role: "Full Stack & Especialista em IA",
+    tagline: "Atendimento omnichannel com inteligência aplicada à triagem.",
     description:
-      "TicHub é um hub de tecnologia onde sou responsável pela estratégia técnica completa. Defino a stack, arquitetura e padrões de desenvolvimento do produto.",
+      "TicHub é uma plataforma omnichannel que centraliza conversas de WhatsApp, e-mail e chat, usando IA para análise de sentimento, classificação e triagem.",
     challenge:
-      "Criar uma plataforma que conectasse diferentes serviços e ferramentas de tecnologia em um único lugar, com uma experiência fluida e integrada.",
+      "Reunir canais distintos de atendimento e organizar o volume de conversas para que cada contato pudesse ser compreendido e direcionado com mais agilidade.",
     solution:
-      "Arquitetura modular que permite integração com múltiplos serviços. Frontend componentizado e backend com APIs bem documentadas.",
-    stack: ["React", "TypeScript", "Node.js", "Supabase"],
-    tags: ["Tech", "CTO", "Plataforma"],
+      "Desenvolvi uma experiência full stack unificada e integrei IA ao fluxo para identificar sentimento, classificar mensagens e apoiar a triagem das conversas.",
+    result: "Unificação dos canais de atendimento e automação da triagem de conversas.",
+    stack: ["React", "TypeScript", "Node.js", "Supabase", "IA", "APIs"],
+    tags: ["Omnichannel", "IA", "Atendimento"],
+    hasPreview: true,
+  },
+  {
+    slug: "sabido",
+    name: "Sabido",
+    url: "https://sabido.pro/",
+    role: "Desenvolvimento & Liderança Técnica",
+    tagline: "Um ecossistema EdTech com aprendizagem personalizada por IA.",
+    description:
+      "O Sabido é um ecossistema EdTech que usa IA para personalizar a experiência de aprendizagem. Minha trajetória no produto evoluiu de QA para desenvolvimento e liderança técnica.",
+    challenge:
+      "Evoluir a qualidade e a experiência do produto enquanto a plataforma incorporava personalização por IA ao percurso de aprendizagem.",
+    solution:
+      "Combinei a visão de qualidade construída em QA com atuação em desenvolvimento e liderança técnica para apoiar a evolução do produto e da personalização por IA.",
+    result:
+      "Experiência educacional com personalização por IA, apoiada por uma atuação que conecta qualidade, desenvolvimento e liderança técnica.",
+    stack: ["React", "TypeScript", "Node.js", "Supabase", "IA"],
+    tags: ["EdTech", "IA", "Liderança Técnica"],
     hasPreview: true,
   },
   {
     slug: "vestgo",
     name: "VestGo",
     url: "https://vestgo.com.br/",
-    role: "CTO",
-    tagline: "Preparação inteligente para quem quer passar.",
+    role: "Full Stack & Arquitetura",
+    tagline: "Preparação para vestibular com uma experiência digital integrada.",
     description:
-      "VestGo é uma plataforma focada em preparação para vestibular. Como CTO, lidero a parte técnica e garanto que a experiência do estudante seja a melhor possível.",
+      "VestGo é uma plataforma focada em preparação para vestibular. Atuei no desenvolvimento full stack e na arquitetura da experiência usada pelos estudantes.",
     challenge:
-      "Criar uma plataforma educacional que suportasse milhares de alunos simultâneos com conteúdo interativo e simulados em tempo real.",
+      "Organizar conteúdo interativo, simulados e acompanhamento de desempenho em uma plataforma responsiva e preparada para a rotina de estudos.",
     solution:
-      "Arquitetura escalável com foco em performance. Sistema de simulados com correção automática e dashboard de desempenho para os alunos.",
+      "Estruturei uma arquitetura com foco em performance, incluindo simulados com correção automática e dashboard de desempenho para os alunos.",
+    result:
+      "Conteúdo, simulados, correção automática e acompanhamento de desempenho reunidos em uma única experiência.",
     stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    tags: ["EdTech", "CTO", "Full-Stack"],
+    tags: ["EdTech", "Full Stack", "Arquitetura"],
     hasPreview: true,
   },
   {
     slug: "wolfex",
     name: "Wolfex",
     url: "https://wolfex.com.br/",
-    role: "Tech Lead",
-    tagline: "Logística reconstruída do zero. Mais rápido, mais limpo.",
+    role: "Tech Lead & Full Stack",
+    tagline: "ERP logístico redesenhado com workflows assistidos por IA.",
     description:
-      "Na Wolfex, atuei como Tech Lead liderando a refatoração e redesign completo do sistema de logística. O sistema antigo era lento e difícil de manter, então reconstruímos do zero com uma arquitetura moderna.",
+      "Na Wolfex, atuei como Tech Lead e Full Stack na refatoração e no redesign do ERP logístico, modernizando a base do produto e incorporando workflows assistidos por IA.",
     challenge:
-      "O sistema legado era monolítico, lento e cheio de débito técnico. Precisava ser reconstruído sem parar a operação da empresa.",
+      "Refatorar e redesenhar um ERP logístico legado sem perder a continuidade dos fluxos essenciais da operação.",
     solution:
-      "Migração gradual para uma nova arquitetura. Redesign completo da interface com foco em UX. Nova API mais performática e banco de dados otimizado.",
-    stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    tags: ["Logística", "Tech Lead", "Redesign"],
+      "Conduzi a evolução para uma arquitetura moderna, com redesign da interface, APIs mais organizadas e workflows assistidos por IA para apoiar etapas da operação logística.",
+    result: "Redução estimada do ciclo de seis meses para um mês.",
+    stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "IA"],
+    tags: ["Logística", "Tech Lead", "IA"],
     hasPreview: true,
   },
   {
     slug: "condor-contratos",
-    name: "Condor | Contratos",
+    name: "Condor Contratos",
     url: "#",
-    role: "Desenvolvedor Full-Stack",
-    tagline: "10 dias virou 1. Automação que mudou a operação.",
+    role: "Desenvolvedor Full Stack",
+    tagline: "Automação de contratos do início à assinatura.",
     description:
-      "Construí do zero um sistema completo de criação e assinatura de contratos para a Condor. O processo que antes levava 10 dias passou a ser feito em apenas 1 dia.",
+      "Desenvolvi um sistema full stack para automatizar a criação, aprovação e assinatura de contratos da Condor.",
     challenge:
-      "O processo de contratos era totalmente manual: criação em Word, envio por email, assinatura física, escaneamento e arquivamento. Lento, propenso a erros e custoso.",
+      "O processo era manual, com criação de documentos, envio por e-mail, assinatura, digitalização e arquivamento em etapas separadas.",
     solution:
-      "Sistema web completo com templates de contratos dinâmicos, preenchimento automático de dados, assinatura digital integrada e armazenamento seguro. Fluxo de aprovação automatizado com notificações.",
+      "Implementei templates dinâmicos, preenchimento de dados, assinatura digital, armazenamento e um fluxo automatizado de aprovação e notificações.",
+    result: "Processo de contratos reduzido de 10 dias para 1 dia.",
     stack: ["React", "Node.js", "PostgreSQL", "Assinatura Digital"],
-    tags: ["Automação", "Contratos", "10→1 dia"],
+    tags: ["Full Stack", "Automação", "Contratos"],
     hasPreview: false,
   },
   {
     slug: "condor-facilities",
-    name: "Condor | Facilities",
+    name: "Condor Facilities",
     url: "#",
-    role: "Desenvolvedor Full-Stack",
-    tagline: "Planilhas viraram sistema. Controle real das operações.",
+    role: "Desenvolvedor Full Stack",
+    tagline: "Operações de facilities reunidas em um fluxo rastreável.",
     description:
-      "Construí do zero o sistema completo de facilities da Condor. Uma plataforma de gestão integrada de operações e manutenção predial.",
+      "Desenvolvi um sistema full stack para centralizar a gestão de operações e manutenção de facilities da Condor.",
     challenge:
-      "A gestão de facilities era feita em planilhas e comunicação por WhatsApp. Sem rastreabilidade, sem métricas, sem controle real das operações.",
+      "Ordens e rotinas de facilities estavam distribuídas entre planilhas e conversas no WhatsApp, dificultando o acompanhamento das atividades.",
     solution:
-      "Sistema web completo com gestão de ordens de serviço, controle de manutenção preventiva e corretiva, dashboard de indicadores e relatórios automatizados.",
-    stack: ["React", "Node.js", "PostgreSQL", "Dashboard"],
-    tags: ["Facilities", "Sistemas", "Full-Stack"],
+      "A solução reúne ordens de serviço, checklists operacionais, identificação por QR Code e apoio à comunicação pelo WhatsApp em um fluxo centralizado.",
+    result:
+      "Operações de facilities centralizadas, com mais rastreabilidade para ordens, checklists e execução em campo.",
+    stack: ["React", "Node.js", "PostgreSQL", "QR Code", "WhatsApp"],
+    tags: ["Facilities", "Operações", "Full Stack"],
     hasPreview: false,
   },
 ];

@@ -8,8 +8,7 @@ const About = () => {
               Sobre
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
-              Quem é{" "}
-              <span className="text-primary">Gustavo</span>
+              IA do modelo à <span className="text-primary">produção</span>
             </h2>
           </div>
 
@@ -33,13 +32,13 @@ const About = () => {
             {/* Bio */}
             <div className="space-y-5">
               <p className="text-foreground/90 leading-relaxed">
-                Sou desenvolvedor e empreendedor de Brasília, especializado em criar produtos digitais do zero e resolver problemas complexos com inteligência artificial.
+                Sou Especialista em IA e Desenvolvedor Full Stack Sênior, com 4+ anos de experiência.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Atuo como CTO em múltiplas empresas simultaneamente, liderando times de tecnologia, definindo arquitetura de sistemas e garantindo que cada produto entregue valor real. Já criei plataformas de educação, hubs de tecnologia, sistemas de logística e ferramentas de automação.
+                Conecto IA generativa, LLMs, RAG, agentes, NLP e prompt engineering a APIs, backends e interfaces modernas.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Meu diferencial é a visão completa: entendo de negócio, design e código. Isso me permite tomar decisões técnicas que fazem sentido pro produto e pro usuário final.
+                Atuo de forma hands-on da arquitetura ao deploy, com experiência em HealthTech, EdTech, IA documental, atendimento omnichannel e automação de conteúdo.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">

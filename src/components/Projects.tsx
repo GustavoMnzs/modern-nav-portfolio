@@ -1,25 +1,102 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Crown, Code2, Truck, Building2, GraduationCap, Globe, BarChart3, FileSignature, ArrowUpRight, BrainCircuit, ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  BarChart3,
+  Bot,
+  Building2,
+  Code2,
+  Crown,
+  FileSignature,
+  Globe,
+  GraduationCap,
+  Truck,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import SpotlightCard from "./SpotlightCard";
 
 const featuredProject = {
   slug: "olym",
   name: "Olym",
-  role: "Fundador e CTO",
-  description: "Meu produto principal. Plataforma criada do zero, da concepção à produção. Arquitetura full-stack com React, Node.js e inteligência artificial integrada.",
-  stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "IA", "Vercel"],
+  role: "Founder",
+  description:
+    "HealthTech com LLMs e fluxos de agentes que automatizam rotinas operacionais e tarefas administrativas.",
+  stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "LLMs", "Agentes de IA"],
 };
 
 const projects = [
-  { name: "Social IA", slug: "social-ia", role: "CTO", icon: BrainCircuit, description: "Plataforma de IA para redes sociais. Automação e geração de conteúdo.", tags: ["IA", "SaaS", "CTO"] },
-  { name: "Sabido", slug: "sabido", role: "CTO", icon: GraduationCap, description: "Plataforma educacional inteligente. Liderança técnica completa.", tags: ["EdTech", "CTO", "IA"] },
-  { name: "AtlasBase", slug: "atlasbase", role: "CTO", icon: BarChart3, description: "Infraestrutura de dados. Arquitetura e liderança técnica.", tags: ["Data", "CTO", "Arquitetura"] },
-  { name: "TicHub", slug: "tichub", role: "CTO", icon: Code2, description: "Hub de tecnologia. Estratégia técnica e desenvolvimento.", tags: ["Tech", "CTO", "Plataforma"] },
-  { name: "VestGo", slug: "vestgo", role: "CTO", icon: Globe, description: "Plataforma de vestibular. Liderança técnica e arquitetura.", tags: ["EdTech", "CTO", "Full-Stack"] },
-  { name: "Wolfex", slug: "wolfex", role: "Tech Lead", icon: Truck, description: "Redesign e refatoração total do sistema de logística.", tags: ["Logística", "Tech Lead", "Redesign"] },
-  { name: "Condor | Contratos", slug: "condor-contratos", role: "Dev Full-Stack", icon: FileSignature, description: "Sistema que reduziu contratos de 10 dias para 1 dia.", tags: ["Automação", "Contratos", "10→1 dia"] },
-  { name: "Condor | Facilities", slug: "condor-facilities", role: "Dev Full-Stack", icon: Building2, description: "Sistema completo de facilities e gestão de operações.", tags: ["Facilities", "Sistemas", "Full-Stack"] },
+  {
+    name: "AtlasBase",
+    slug: "atlasbase",
+    role: "Especialista em IA & Full Stack",
+    icon: BarChart3,
+    description:
+      "IA documental B2B que transforma PDFs e documentos não estruturados em dados para auditoria e compliance.",
+    tags: ["IA documental", "NLP", "Compliance"],
+  },
+  {
+    name: "Condor Inova IA",
+    slug: "condor-inova-ia",
+    role: "Especialista em IA & Full Stack",
+    icon: Bot,
+    description:
+      "Sistema multiagente que orquestra agentes de IA especializados para executar tarefas e apoiar decisões em fluxos operacionais da Condor.",
+    tags: ["Agentes de IA", "Multiagente", "LLMs"],
+  },
+  {
+    name: "TicHub",
+    slug: "tichub",
+    role: "Full Stack & Especialista em IA",
+    icon: Code2,
+    description:
+      "Omnichannel que centraliza WhatsApp, e-mail e chat, com IA para sentimento, classificação e triagem.",
+    tags: ["Omnichannel", "IA", "Atendimento"],
+  },
+  {
+    name: "Sabido",
+    slug: "sabido",
+    role: "Desenvolvimento & Liderança Técnica",
+    icon: GraduationCap,
+    description:
+      "Ecossistema EdTech com IA para personalização, em uma trajetória de QA a desenvolvimento e liderança técnica.",
+    tags: ["EdTech", "IA", "Liderança Técnica"],
+  },
+  {
+    name: "VestGo",
+    slug: "vestgo",
+    role: "Full Stack & Arquitetura",
+    icon: Globe,
+    description:
+      "Plataforma de preparação para vestibular com simulados, correção automática e acompanhamento de desempenho.",
+    tags: ["EdTech", "Full Stack", "Arquitetura"],
+  },
+  {
+    name: "Wolfex",
+    slug: "wolfex",
+    role: "Tech Lead & Full Stack",
+    icon: Truck,
+    description:
+      "Refatoração e redesign de um ERP logístico com workflows assistidos por IA.",
+    tags: ["Logística", "Tech Lead", "IA"],
+  },
+  {
+    name: "Condor Contratos",
+    slug: "condor-contratos",
+    role: "Desenvolvedor Full Stack",
+    icon: FileSignature,
+    description:
+      "Automação do fluxo de contratos, reduzindo o processo de 10 dias para 1 dia.",
+    tags: ["Automação", "Contratos", "10 → 1 dia"],
+  },
+  {
+    name: "Condor Facilities",
+    slug: "condor-facilities",
+    role: "Desenvolvedor Full Stack",
+    icon: Building2,
+    description:
+      "Gestão de facilities com ordens de serviço, checklists, QR Code e apoio pelo WhatsApp.",
+    tags: ["Facilities", "Operações", "Full Stack"],
+  },
 ];
 
 const Projects = () => {
@@ -30,11 +107,13 @@ const Projects = () => {
       <div className="section-container">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">Projetos</span>
+            <span className="text-primary text-xs tracking-[0.3em] uppercase font-semibold mono">Cases</span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
-              Produtos que <span className="text-primary">construí</span>
+              IA aplicada a <span className="text-primary">produtos reais</span>
             </h2>
-            <p className="text-muted-foreground mt-3 max-w-lg mx-auto">De startups a sistemas enterprise, cada projeto com impacto real.</p>
+            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
+              Conecto modelos, dados, automação e engenharia para resolver problemas reais e transformar complexidade em produtos úteis.
+            </p>
           </div>
 
           {/* Featured */}
@@ -59,7 +138,7 @@ const Projects = () => {
                 ))}
               </div>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl font-semibold shadow-[0_0_20px_hsl(180,100%,50%,0.15)] hover:shadow-[0_0_30px_hsl(180,100%,50%,0.3)] transition-all duration-300">
-                Ver Case Study <ArrowRight className="w-4 h-4 ml-1" />
+                Ver case completo <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
             </div>
           </SpotlightCard>
