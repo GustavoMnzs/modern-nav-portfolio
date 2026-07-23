@@ -4,7 +4,7 @@ const experiences = [
   {
     company: "Olym",
     role: "Founder",
-    period: "jun/2025–atual",
+    period: "jun/2025 - atual",
     current: true,
     description: [
       "Desenvolvimento de produto HealthTech da concepção à produção",
@@ -16,7 +16,7 @@ const experiences = [
   {
     company: "Gálata",
     role: "Engenheiro Líder de Suporte",
-    period: "abr/2025–atual",
+    period: "abr/2025 - atual",
     current: true,
     description: [
       "Liderança da operação de suporte técnico corporativo",
@@ -27,7 +27,7 @@ const experiences = [
   {
     company: "Volpe",
     role: "Desenvolvedor Full Stack & Especialista em Automação",
-    period: "jul/2024–jun/2025",
+    period: "jul/2024 - jun/2025",
     current: false,
     description: [
       "Desenvolvimento Full Stack de produtos digitais e automações de marketing",
@@ -38,7 +38,7 @@ const experiences = [
   {
     company: "UpSites",
     role: "Engenheiro de Sistemas Web",
-    period: "mar/2022–fev/2024",
+    period: "mar/2022 - fev/2024",
     current: false,
     description: [
       "Desenvolvimento e sustentação de sistemas web focados em conversão, segurança e alta performance",

@@ -36,7 +36,7 @@ const Hero = () => {
             </p>
 
             <p className="text-xs sm:text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-              Projeto e desenvolvo soluções de IA generativa ponta a ponta — LLMs, RAG, agentes e NLP integrados a APIs, backends escaláveis e interfaces modernas.
+              Projeto e desenvolvo soluções de IA generativa ponta a ponta: LLMs, RAG, agentes e NLP integrados a APIs, backends escaláveis e interfaces modernas.
             </p>
 
             <p className="text-[11px] sm:text-xs md:text-sm text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed">
